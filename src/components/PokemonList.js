@@ -21,7 +21,7 @@ const Home = () => {
     setInput(e.target.value);
   };
 
-  const filteredMonsters = pokedex?.filter((item) =>
+  const filteredPokedex = pokedex?.filter((item) =>
     item.name.toLowerCase().includes(input.toLowerCase())
   );
 
@@ -38,7 +38,7 @@ const Home = () => {
 
       <div className='content'>
         <ul>
-          {filteredMonsters?.map((item) => (
+          {filteredPokedex?.map((item) => (
             <li key={item.name}>
               <img
                 src={`https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${
