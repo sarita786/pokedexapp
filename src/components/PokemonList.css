@@ -1,0 +1,50 @@
+body {
+    padding: 1rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px orangered;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.search input {
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px orangered;
+    outline: none;
+    border: none;
+    padding: 1rem .5rem;
+
+}
+
+.search select {
+    margin-left: .5rem;
+    box-shadow: 1px 1px 1px 1px orangered;
+    outline: none;
+    border: none;
+    padding: 1rem .5rem;
+
+}
